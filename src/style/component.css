@@ -1,0 +1,24 @@
+/* ========================================================
+   COMPONENTS LAYER - Custom Reusable Components
+======================================================== */
+@layer components {
+  /* Reusable button styles */
+  .btn-primary {
+    @apply px-4 py-2 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-500 transition cursor-pointer;
+  }
+
+  .btn-secondary {
+    @apply px-4 py-2 bg-slate-800 text-slate-200 rounded-lg font-medium hover:bg-slate-700 transition cursor-pointer;
+  }
+
+  /* Reusable card / container box */
+  .card-box {
+    background-color: var(--box-color, #1e293b);
+    @apply rounded-xl p-6 shadow-md border border-slate-800;
+  }
+
+  /* Badge */
+  .badge {
+    @apply px-2.5 py-1 text-xs font-semibold rounded-full;
+  }
+}

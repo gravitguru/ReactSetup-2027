@@ -1,0 +1,98 @@
+/* ========================================================
+   UTILITIES LAYER - Custom Utility & Layout Classes
+======================================================== */
+@layer utilities {
+  /* Scrollbar Hide */
+  .scrollbar-hide,
+  .noscrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar,
+  .noscrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Base Alignment Utilities (default) */
+  .xs { @apply flex justify-start; }
+  .xc { @apply flex justify-center; }
+  .xe { @apply flex justify-end; }
+
+  .ys { @apply flex items-start; }
+  .yc { @apply flex items-center; }
+  .ye { @apply flex items-end; }
+
+  .xys { @apply flex justify-start items-start; }
+  .xyc { @apply flex justify-center items-center; }
+  .xye { @apply flex justify-end items-end; }
+
+  .ss { @apply self-start; }
+  .sc { @apply self-center; }
+  .se { @apply self-end; }
+  .sb { @apply self-baseline; }
+  .sa { @apply self-auto; }
+
+  /* SM (≥ 640px) */
+  @media (min-width: 640px) {
+    .sm\:xs { @apply flex justify-start; }
+    .sm\:xc { @apply flex justify-center; }
+    .sm\:xe { @apply flex justify-end; }
+
+    .sm\:ys { @apply flex items-start; }
+    .sm\:yc { @apply flex items-center; }
+    .sm\:ye { @apply flex items-end; }
+
+    .sm\:xys { @apply flex justify-start items-start; }
+    .sm\:xyc { @apply flex justify-center items-center; }
+    .sm\:xye { @apply flex justify-end items-end; }
+
+    .sm\:ss { @apply self-start; }
+    .sm\:sc { @apply self-center; }
+    .sm\:se { @apply self-end; }
+    .sm\:sb { @apply self-baseline; }
+    .sm\:sa { @apply self-auto; }
+  }
+
+  /* MD (≥ 768px) */
+  @media (min-width: 768px) {
+    .md\:xs { @apply flex justify-start; }
+    .md\:xc { @apply flex justify-center; }
+    .md\:xe { @apply flex justify-end; }
+
+    .md\:ys { @apply flex items-start; }
+    .md\:yc { @apply flex items-center; }
+    .md\:ye { @apply flex items-end; }
+
+    .md\:xys { @apply flex justify-start items-start; }
+    .md\:xyc { @apply flex justify-center items-center; }
+    .md\:xye { @apply flex justify-end items-end; }
+
+    .md\:ss { @apply self-start; }
+    .md\:sc { @apply self-center; }
+    .md\:se { @apply self-end; }
+    .md\:sb { @apply self-baseline; }
+    .md\:sa { @apply self-auto; }
+  }
+
+  /* LG (≥ 1024px) */
+  @media (min-width: 1024px) {
+    .lg\:xs { @apply flex justify-start; }
+    .lg\:xc { @apply flex justify-center; }
+    .lg\:xe { @apply flex justify-end; }
+
+    .lg\:ys { @apply flex items-start; }
+    .lg\:yc { @apply flex items-center; }
+    .lg\:ye { @apply flex items-end; }
+
+    .lg\:xys { @apply flex justify-start items-start; }
+    .lg\:xyc { @apply flex justify-center items-center; }
+    .lg\:xye { @apply flex justify-end items-end; }
+
+    .lg\:ss { @apply self-start; }
+    .lg\:sc { @apply self-center; }
+    .lg\:se { @apply self-end; }
+    .lg\:sb { @apply self-baseline; }
+    .lg\:sa { @apply self-auto; }
+  }
+}
+
